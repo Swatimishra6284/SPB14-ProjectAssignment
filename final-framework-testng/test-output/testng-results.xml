@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="55169" started-at="2020-03-06T13:21:17 IST" finished-at="2020-03-06T13:22:12 IST">
+  <suite name="Sample test Suite" duration-ms="67040" started-at="2020-03-13T13:43:41 IST" finished-at="2020-03-13T13:44:48 IST">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="55169" started-at="2020-03-06T13:21:17 IST" finished-at="2020-03-06T13:22:12 IST">
-      <class name="com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="13" started-at="2020-03-06T13:21:17 IST" finished-at="2020-03-06T13:21:17 IST">
+    <test name="Sample test" duration-ms="67040" started-at="2020-03-13T13:43:41 IST" finished-at="2020-03-13T13:44:48 IST">
+      <class name="com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="19" started-at="2020-03-13T13:43:41 IST" finished-at="2020-03-13T13:43:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040@79be0360]" name="setUp" is-config="true" duration-ms="20801" started-at="2020-03-06T13:21:17 IST" finished-at="2020-03-06T13:21:38 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41@79be0360]" name="setUp" is-config="true" duration-ms="27224" started-at="2020-03-13T13:43:41 IST" finished-at="2020-03-13T13:44:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addPostTest()[pri:0, instance:com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040@79be0360]" name="addPostTest" duration-ms="32295" started-at="2020-03-06T13:21:38 IST" finished-at="2020-03-06T13:22:10 IST">
+        <test-method status="PASS" signature="addPostTest()[pri:0, instance:com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41@79be0360]" name="addPostTest" duration-ms="37753" started-at="2020-03-13T13:44:09 IST" finished-at="2020-03-13T13:44:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPostTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040@79be0360]" name="tearDown" is-config="true" duration-ms="2009" started-at="2020-03-06T13:22:10 IST" finished-at="2020-03-06T13:22:12 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41@79be0360]" name="tearDown" is-config="true" duration-ms="1986" started-at="2020-03-13T13:44:46 IST" finished-at="2020-03-13T13:44:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040 -->
+      </class> <!-- com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41 -->
     </test> <!-- Sample test -->
   </suite> <!-- Sample test Suite -->
 </testng-results>

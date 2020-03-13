@@ -13,6 +13,10 @@ public class RealEstate_AdminLoginPOM {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath="//a[@href='http://realty-real-estatem1.upskills.in/my-profile/']")
+//	@FindBy(className="sign-in")
+	private WebElement login;
+	
 	@FindBy(id="user_login")
 	private WebElement yourName; 
 	
@@ -23,6 +27,11 @@ public class RealEstate_AdminLoginPOM {
 	private WebElement signInBtn; 
 	
 	private WebElement pageTitle;
+	
+		
+	public void clickLoginLink() {
+		this.login.click();
+	}
 	
 	public void sendUserName(String userName) {
 		this.yourName.clear();
@@ -40,10 +49,14 @@ public class RealEstate_AdminLoginPOM {
 	
 	public void getPageTitle() {
 		String actual = driver.getTitle();
-		
-//		String expected = "Dashboard ‹ Real Estate — WordPress";
 		if (actual == "Dashboard ‹ Real Estate — WordPress" ) {
 			System.out.println("Admin Login :"+ actual);
 		}
 	}
+	
+	
 }
+
+		
+	
+	

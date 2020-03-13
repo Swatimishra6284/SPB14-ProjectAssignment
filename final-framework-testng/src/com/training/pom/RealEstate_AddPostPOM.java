@@ -1,15 +1,17 @@
 package com.training.pom;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RealEstate_AddPost {
+public class RealEstate_AddPostPOM {
 	private WebDriver driver; 
 	
-	public RealEstate_AddPost(WebDriver driver) {
+	public RealEstate_AddPostPOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
@@ -73,12 +75,12 @@ public class RealEstate_AddPost {
 	public void sendSerchOption(String searchSend) {
 		this.search.clear();
 		this.search.sendKeys(searchSend);
-		
+			
 	}
 	
 	public void clickSearchBtn() {
 		this.searchButton.click();
-		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
 	public void validateSerach() {
