@@ -5,27 +5,26 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
 import com.training.pom.HomePOM;
 import com.training.pom.LoginPOM;
-import com.training.pom.RealEstate_AdminLoginPOM;
 import com.training.pom.RealEstate_NewLaunchPOM;
 import com.training.pom.RealEstate_QueryFormPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class RealEstate_AdminLogin_Test_Simple_RETC_011 {
+public class RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_071 {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private RealEstate_AdminLoginPOM realEstate_AdminLoginPOM;
-	
+	private RealEstate_NewLaunchPOM realEstate_NewLaunchPOM;
+	private RealEstate_QueryFormPOM realEstate_QueryFormPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -39,7 +38,8 @@ public class RealEstate_AdminLogin_Test_Simple_RETC_011 {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		realEstate_AdminLoginPOM = new RealEstate_AdminLoginPOM(driver);
+		realEstate_NewLaunchPOM = new RealEstate_NewLaunchPOM(driver);
+		realEstate_QueryFormPOM = new RealEstate_QueryFormPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -51,18 +51,25 @@ public class RealEstate_AdminLogin_Test_Simple_RETC_011 {
 		Thread.sleep(1000);
 		driver.quit();
 	}
-
-//	Simple-RETC_011-To Verify whether application allows registered admin to login into application
-	@Test
-	public void validLoginTest() {
-		realEstate_AdminLoginPOM.clickLoginLink();
-		realEstate_AdminLoginPOM.sendUserName("admin");
-		realEstate_AdminLoginPOM.sendPassword("admin@123");
-		screenShot.captureScreenShot("Admin_Login_RETC_011");
-		realEstate_AdminLoginPOM.clickSignIn();
-		realEstate_AdminLoginPOM.getPageTitle();
-		screenShot.captureScreenShot("Page_Title_RETC_011");
-	}
 	
-
+	@Test(dataProvider = "form_inputs", dataProviderClass = LoginDataProviders.class)
+	public void validLoginTest(String userName, String email2, String subject, String messages) {
+		realEstate_NewLaunchPOM.ClickNewLaunch();
+		
+		realEstate_NewLaunchPOM.ClickImageLink();
+		
+		realEstate_QueryFormPOM.sendYourName(userName);
+		System.out.println(userName);
+		
+		realEstate_QueryFormPOM.sendEmail(email2);
+		System.out.println(email2);
+		
+		realEstate_QueryFormPOM.SendSubject(subject);
+		System.out.println(subject);
+		
+		realEstate_QueryFormPOM.SendMessage(messages);
+		System.out.println(messages);
+		
+		realEstate_QueryFormPOM.clickSendBtn();
+	}
 }

@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -59,5 +61,8 @@ public class RealEstate_NewLaunch_QueryForm_Test_Simple_RETC_010 {
 		realEstate_QueryFormPOM.SendSubject("apartments");
 		realEstate_QueryFormPOM.SendMessage("looking for an apartments");
 		realEstate_QueryFormPOM.clickSendBtn();
+		WebElement error = driver.findElement(By.xpath("//div[text()='There was an error trying to send your message. Please try again later.']"));
+		String errorMsg = error.getText();
+		System.out.println(errorMsg);
 	}
 }

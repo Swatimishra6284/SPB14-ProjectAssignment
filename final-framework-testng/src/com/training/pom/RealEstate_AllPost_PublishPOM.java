@@ -47,12 +47,10 @@ public class RealEstate_AllPost_PublishPOM {
 	@FindBy(xpath="//input[@name='publish']")
 	private WebElement publish;
 	
-	@FindBy(xpath="//a[text()='View post']")
+//	@FindBy(xpath="//*[@id=\"message\"]/p/a")
+	@FindBy(linkText="View post")
 	private WebElement viewPost;
 	
-//	@FindBy(xpath="//a[@href='http://realty-real-estatem1.upskills.in/ibm-post/']")
-//	private WebElement verifyPost;
-
 	public void ClickPosts() {
 		this.posts.click();
 	}
@@ -87,24 +85,17 @@ public class RealEstate_AllPost_PublishPOM {
 	}
 	
 	
-	public void ClickPublish() throws InterruptedException {
+	public void ClickPublish() {
 		this.publish.click();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-					
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+						
 	}
 	
-	public void ClickViewPost() throws InterruptedException {
+	public void ClickViewPost() {
 		this.viewPost.click();
-
+		
 	}
 	
-//	public void VerifyPost(String verify) {
-//		
-//		String actual = this.verifyPost.getText();
-//		this.verifyPost.sendKeys(verify);
-//		String expected = "IBM Post";
-//		actual.equalsIgnoreCase(expected);
-//		
-//	}
+
 	
 }

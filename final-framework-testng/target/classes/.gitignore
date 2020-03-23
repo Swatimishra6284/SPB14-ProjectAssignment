@@ -1,2 +1,5 @@
-/META-INF/
 /com/
+/db.sql
+/others.properties
+/sql.properties
+/META-INF/

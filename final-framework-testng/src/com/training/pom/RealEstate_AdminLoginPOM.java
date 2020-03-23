@@ -14,7 +14,6 @@ public class RealEstate_AdminLoginPOM {
 	}
 	
 	@FindBy(xpath="//a[@href='http://realty-real-estatem1.upskills.in/my-profile/']")
-//	@FindBy(className="sign-in")
 	private WebElement login;
 	
 	@FindBy(id="user_login")

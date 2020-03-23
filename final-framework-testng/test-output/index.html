@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Sample_test_Suite">
-              <span class="suite-name border-passed">Sample test Suite</span>
+              <span class="suite-name border-skipped">Sample test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Sample_test_Suite" class="hide-methods skipped suite-Sample_test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Sample_test_Suite -->
+                      <a href="#" panel-name="suite-Sample_test_Suite" class="show-methods skipped suite-Sample_test_Suite"> (show)</a> <!-- show-methods skipped suite-Sample_test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Sample_test_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_test_Suite" title="com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Sample_test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,12 @@
                     <div class="method-list-content passed suite-Sample_test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sample_test_Suite" title="com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41" hash-for-method="addPostTest">addPostTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_test_Suite" title="com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072" hash-for-method="validLoginTest(, alex@gmail.com, Plots, looking for an plots)">validLoginTest(, alex@gmail.com, Plots, looking for an plots)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sample_test_Suite" title="com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072" hash-for-method="validLoginTest(manzoor mehadi, , apartments, looking for an apartments)">validLoginTest(manzoor mehadi, , apartments, looking for an apartments)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Sample_test_Suite -->
@@ -117,17 +136,102 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Sample_test_Suite" class="panel Sample_test_Suite">
-          <div class="suite-Sample_test_Suite-class-passed">
+          <div class="suite-Sample_test_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addPostTest">
-                  </a> <!-- addPostTest -->
-                  <span class="method-name">addPostTest</span>
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=80.0.3987.149)
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-1P6NBCG&apos;, ip: &apos;9.85.125.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01160C83+1707139]
+	Ordinal0 [0x010C68F1+1075441]
+	Ordinal0 [0x0103DE72+515698]
+	Ordinal0 [0x01037CA8+490664]
+	Ordinal0 [0x0103839B+492443]
+	Ordinal0 [0x010392F5+496373]
+	Ordinal0 [0x01034F05+478981]
+	Ordinal0 [0x0103ECA0+519328]
+	Ordinal0 [0x00FECA67+182887]
+	Ordinal0 [0x00FEBDDD+179677]
+	Ordinal0 [0x00FE9D4B+171339]
+	Ordinal0 [0x00FD1D4A+73034]
+	Ordinal0 [0x00FD2DC0+77248]
+	Ordinal0 [0x00FD2D59+77145]
+	Ordinal0 [0x010DBB67+1162087]
+	GetHandleVerifier [0x011FA966+508998]
+	GetHandleVerifier [0x011FA6A4+508292]
+	GetHandleVerifier [0x0120F7B7+594583]
+	GetHandleVerifier [0x011FB1D6+511158]
+	Ordinal0 [0x010D402C+1130540]
+	Ordinal0 [0x010DD4CB+1168587]
+	Ordinal0 [0x010DD633+1168947]
+	Ordinal0 [0x010F5B35+1268533]
+	BaseThreadInitThunk [0x773C6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77967B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77967B44+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.training.utility.DriverFactory.getDriver(DriverFactory.java:24)
+	at com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072.setUp(RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072.java:42)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sample_test_Suite-class-skipped -->
+          <div class="suite-Sample_test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest(, alex@gmail.com, Plots, looking for an plots)">
+                  </a> <!-- validLoginTest(, alex@gmail.com, Plots, looking for an plots) -->
+                  <span class="method-name">validLoginTest</span>
+                  <span class="parameters">(, alex@gmail.com, Plots, looking for an plots)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest(manzoor mehadi, , apartments, looking for an apartments)">
+                  </a> <!-- validLoginTest(manzoor mehadi, , apartments, looking for an apartments) -->
+                  <span class="method-name">validLoginTest</span>
+                  <span class="parameters">(manzoor mehadi, , apartments, looking for an apartments)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,7 +248,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Sample test Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Sample test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41&quot;/&gt;
+      &lt;class name=&quot;com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Sample test --&gt;
 &lt;/suite&gt; &lt;!-- Sample test Suite --&gt;
@@ -184,16 +288,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addPostTest')
-data.setCell(0, 2, 'com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41')
-data.setCell(0, 3, 37753);
+data.setCell(0, 1, 'validLoginTest')
+data.setCell(0, 2, 'com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072')
+data.setCell(0, 3, 6855);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validLoginTest')
+data.setCell(1, 2, 'com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072')
+data.setCell(1, 3, 6113);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validLoginTest')
+data.setCell(2, 2, 'com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072')
+data.setCell(2, 3, 0);
 window.suiteTableData['Sample_test_Suite']= { tableData: data, tableDiv: 'times-div-Sample_test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Sample_test_Suite">
               </div> <!-- times-div-Sample_test_Suite -->
             </div> <!-- times-div -->
@@ -219,22 +331,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-start">164 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addPostTest</span>
-                <span class="method-start">27261 ms</span>
+                <span class="method-name">validLoginTest(manzoor mehadi, , apartments, looking for an apartments)</span>
+                <span class="method-start">25197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65016 ms</span>
+                <span class="method-start">31315 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32316 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest(, alex@gmail.com, Plots, looking for an plots)</span>
+                <span class="method-start">56558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63415 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">64416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">80401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">80414 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

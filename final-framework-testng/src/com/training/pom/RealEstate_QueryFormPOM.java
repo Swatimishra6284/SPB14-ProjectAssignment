@@ -1,5 +1,6 @@
 package com.training.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,11 +32,13 @@ public class RealEstate_QueryFormPOM {
 	public void sendYourName(String yourName) {
 		this.yourName.clear();
 		this.yourName.sendKeys(yourName);
+		
 	}
 	
 	public void sendEmail(String email) {
 		this.email.clear(); 
-		this.email.sendKeys(email); 
+		this.email.sendKeys(email);	
+
 	}
 	
 	public void SendSubject(String subject) {

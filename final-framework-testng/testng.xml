@@ -4,11 +4,14 @@
 <suite name = "Sample test Suite">
    <test name = "Sample test">
       <classes>
-          <class name = "com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Simple_RETC_010"/>
-      	  <class name = "com.training.sanity.tests.RealEstate_AdminLogin_Test_Simple_RETC_011"/>
-      	  <class name = "com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040"/>
-      	  <class name = "com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41"/>
-      	  <class name = "com.training.sanity.tests.RealEstate_AllPostVerification_Test_Medium_RETC_42"/>
+          	<class name = "com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Simple_RETC_010"/>
+ 		  	<class name = "com.training.sanity.tests.RealEstate_AdminLogin_Test_Simple_RETC_011"/>
+ 			<class name = "com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040"/>
+ 			<class name = "com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41"/>
+ 			<class name = "com.training.sanity.tests.RealEstate_AllPostVerification_Test_Medium_RETC_42"/>
+ 			<class name = "com.training.sanity.tests.RealEstate_PropertiesDetails_Test_Complex_RETC_070"/>
+ 			<class name = "com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_071"/>
+ 			<class name = "com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072"/>
       </classes>
    </test>
 </suite>	

@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Sample test Suite]">
   <test thread-count="5" name="Sample test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040">
+      <class name="com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072">
         <methods>
-          <include name="setUpBeforeClass"/>
-          <include name="addPostTest"/>
+          <include name="validLoginTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.RealEstate_AddPost_Test_Medium_RETC_040 -->
+      </class> <!-- com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072 -->
     </classes>
   </test> <!-- Sample test(failed) -->
 </suite> <!-- Failed suite [Sample test Suite] -->

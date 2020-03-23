@@ -9,10 +9,132 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Sample test Suite</th></tr>
-<tr><td><a href="#t0">Sample test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">67,040</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Sample test</a></td><td class="num">2</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">80,443</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sample test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41</td><td><a href="#m0">addPostTest</a></td><td rowspan="1">1584087249207</td><td rowspan="1">37753</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sample test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072</td><td><a href="#m0">setUp</a></td><td rowspan="1">1584966863241</td><td rowspan="1">15970</td></tr><tr><th colspan="4">Sample test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1584966879239</td><td rowspan="1">-1584966879239</td></tr><tr><th colspan="4">Sample test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072</td><td><a href="#m2">validLoginTest</a></td><td rowspan="1">1584966879226</td><td rowspan="1">0</td></tr><tr><th colspan="4">Sample test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072</td><td><a href="#m3">validLoginTest</a></td><td rowspan="2">1584966855383</td><td rowspan="2">6855</td></tr><tr class="passedeven"><td><a href="#m4">validLoginTest</a></td></tr></tbody>
 </table>
-<h2>Sample test</h2><h3 id="m0">com.training.sanity.tests.RealEstate_CommentVerififcation_Test_Medium_RETC_41#addPostTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Sample test</h2><h3 id="m0">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=80.0.3987.149)
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-1P6NBCG&apos;, ip: &apos;9.85.125.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01160C83+1707139]
+	Ordinal0 [0x010C68F1+1075441]
+	Ordinal0 [0x0103DE72+515698]
+	Ordinal0 [0x01037CA8+490664]
+	Ordinal0 [0x0103839B+492443]
+	Ordinal0 [0x010392F5+496373]
+	Ordinal0 [0x01034F05+478981]
+	Ordinal0 [0x0103ECA0+519328]
+	Ordinal0 [0x00FECA67+182887]
+	Ordinal0 [0x00FEBDDD+179677]
+	Ordinal0 [0x00FE9D4B+171339]
+	Ordinal0 [0x00FD1D4A+73034]
+	Ordinal0 [0x00FD2DC0+77248]
+	Ordinal0 [0x00FD2D59+77145]
+	Ordinal0 [0x010DBB67+1162087]
+	GetHandleVerifier [0x011FA966+508998]
+	GetHandleVerifier [0x011FA6A4+508292]
+	GetHandleVerifier [0x0120F7B7+594583]
+	GetHandleVerifier [0x011FB1D6+511158]
+	Ordinal0 [0x010D402C+1130540]
+	Ordinal0 [0x010DD4CB+1168587]
+	Ordinal0 [0x010DD633+1168947]
+	Ordinal0 [0x010F5B35+1268533]
+	BaseThreadInitThunk [0x773C6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77967B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77967B44+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.training.utility.DriverFactory.getDriver(DriverFactory.java:24)
+	at com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072.setUp(RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072.java:42)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072#validLoginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=80.0.3987.149)
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-1P6NBCG&apos;, ip: &apos;9.85.125.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01160C83+1707139]
+	Ordinal0 [0x010C68F1+1075441]
+	Ordinal0 [0x0103DE72+515698]
+	Ordinal0 [0x01037CA8+490664]
+	Ordinal0 [0x0103839B+492443]
+	Ordinal0 [0x010392F5+496373]
+	Ordinal0 [0x01034F05+478981]
+	Ordinal0 [0x0103ECA0+519328]
+	Ordinal0 [0x00FECA67+182887]
+	Ordinal0 [0x00FEBDDD+179677]
+	Ordinal0 [0x00FE9D4B+171339]
+	Ordinal0 [0x00FD1D4A+73034]
+	Ordinal0 [0x00FD2DC0+77248]
+	Ordinal0 [0x00FD2D59+77145]
+	Ordinal0 [0x010DBB67+1162087]
+	GetHandleVerifier [0x011FA966+508998]
+	GetHandleVerifier [0x011FA6A4+508292]
+	GetHandleVerifier [0x0120F7B7+594583]
+	GetHandleVerifier [0x011FB1D6+511158]
+	Ordinal0 [0x010D402C+1130540]
+	Ordinal0 [0x010DD4CB+1168587]
+	Ordinal0 [0x010DD633+1168947]
+	Ordinal0 [0x010F5B35+1268533]
+	BaseThreadInitThunk [0x773C6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77967B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77967B44+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.training.utility.DriverFactory.getDriver(DriverFactory.java:24)
+	at com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072.setUp(RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072.java:42)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072#validLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td></td><td>alex@gmail.com</td><td>Plots</td><td>looking for an plots</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.training.sanity.tests.RealEstate_NewLaunch_QueryForm_Test_Complex_RETC_072#validLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>manzoor mehadi</td><td></td><td>apartments</td><td>looking for an apartments</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

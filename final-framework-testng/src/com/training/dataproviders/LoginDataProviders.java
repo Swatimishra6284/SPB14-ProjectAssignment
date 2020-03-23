@@ -41,4 +41,16 @@ public class LoginDataProviders {
 		// ensure you will have the title as first line in the file 
 		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
 	}
+	
+	@DataProvider(name = "form_inputs")
+	public Object[][] formXLSData(){
+		// ensure you will have the title as first line in the file 
+		return new ReadExcel().getExcelData("C:/Automation/Selenium _Project/TestData.xls", "Sheet1"); 
+	}
+	
+	@DataProvider(name = "form_inputs_neg")
+	public Object[][] form_negXLSData(){
+		// ensure you will have the title as first line in the file 
+		return new ReadExcel().getExcelData("C:/Automation/Selenium _Project/TestData.xls", "Sheet2"); 
+	}
 }
